@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>基于swoole实现的微信机器人</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="kcloze.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        
+        <a class="navbar-link" target="_blank" href="http://www.kcloze.com">Blog&nbsp;&nbsp;</a>
+        <a class="navbar-link" target="_blank" href="http://swoole-jobs.kcloze.com">swoole-jobs&nbsp;&nbsp;</a>
+        <a class="navbar-link" target="_blank" href="http://multiprocess.kcloze.com">multiprocess&nbsp;&nbsp;</a>
+        <a class="navbar-brand active" href="http://swoole-bot.kcloze.com">swoole-bot&nbsp;&nbsp;</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+    </nav>
+
+    <main role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <div class="container">
+                <p><a href="/"><img class="" src="" alt=""></a></p>
+                <p></p>
+                <h4>依赖vbot和微信网页版的功能，帮助管理微信群/聊天/踢人等</h4>
+                <h1>swoole-bot基于swoole实现的微信机器人</h1>
+                <p></p>
+                <p>
+                    <a class="btn btn-success btn-default" href="https://github.com/kcloze/swoole-bot" role="button">Github &raquo;</a>&nbsp;
+                    <a class="btn btn-primary btn-default" href="https://github.com/kcloze/swoole-bot" role="button">文档 &raquo;</a>&nbsp;
+                    <a class="btn btn-info btn-default" href="https://github.com/kcloze/swoole-bot/releases/tag/2.2" role="button">2.2 &raquo;</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <h2>特性：</h2>
+                
+            </div>
+            <hr>
+            <div class="row">
+                
+                <div class="col-sm-12">
+                    <!-- <h4 >1.业务场景</h4> -->
+                    <li>模拟微信网页版登录,如果网页版本没有的功能，这个项目项目也是无能为力的；</li>
+                    <li>利用swoole，增强原生PHP cli的能力，默认是daemon的守护进程模式；</li>
+                    <li>使用hanson/vbot库，swoole-bot只是增加swoole版本的入口,这样有利用新功能迭代；</li>
+                    <li>支持多用户登录，修改src/config.php 的workNum可以控制默认启动进程数</li>
+                    <li>自动监控子进程，意外退出后会自动恢复，保证服务稳定性</li>
+
+                </div>
+
+
+            </div>
+        
+        </div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-16">
+                    <h2>架构图：</h2>
+                    <hr>
+                    <p>
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/kcloze/swoole-bot/master/flowchart2.png" alt="">
+                    </p>
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+         
+                
+            
+            <div class="row">
+            <h2>安装：</h2>
+            <figure class="highlight">
+            <pre >
+            <code class="" data-lang="">
+git clone https://github.com/kcloze/swoole-bot.git
+cd swoole-bot
+composer install
+            </code>
+            </pre>
+            </figure>
+                   
+                    
+            </div>
+
+        </div>
+
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-16">
+                    <h2>运行状态：</h2>
+                    <hr>
+                    <p>
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/kcloze/swoole-bot/master/demo-1.png" alt="">
+                    </p>
+        
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- /container -->
+        <div class="container">
+            <div class="row">
+                <p>
+                    Copyright © 2017 Swoole-jobs 版权所有，并保留所有权利
+        
+                </p>
+            </div>
+            <div class="row">
+        
+                <p>
+                    <a href="http://www.miitbeian.gov.cn" rel="noopener" target="_blank">粤ICP备16040074号-1</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?998d81fcb79e33d7dec72c8c7ff64732";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</body>
+
+</html>
